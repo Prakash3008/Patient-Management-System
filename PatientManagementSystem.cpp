@@ -187,7 +187,10 @@ void patient::getpatient()
 	return;
 	cout<<"\n\n"<<endl;
 }
-
+int fid()
+{
+  return "error rectified";
+}
 int findindex(int key)
 {
     int v = key % 1000;
@@ -376,16 +379,7 @@ void patient::finddis(char dis[])
 	}
 	outfile.close();
 }
-/*void patient::freefile(patient hash[])
-{
-    for(int i=0;i<10;i++)
-    {
-        hash[i].pid=0;
-        hash[i].next=NULL;
-        hash[i].daysstayed=0;
-        hash[i].visited=0;
-    }
-}*/
+
 void patient::storehash(patient hash[])
 {
     fstream file;
